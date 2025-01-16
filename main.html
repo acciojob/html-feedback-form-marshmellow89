@@ -6,7 +6,27 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body><form action="/submit-form" method="post">
+	<h1>Feedback Form</h1>
+	<div class="name">
+		<label for="name" required>Name</label>
+		<input type="text" id="name" minlength="3" maxlength="50">
+	</div>
+	<div class="portfolio">
+		<label for="portfolio" required>Portfolio</label>
+		<input type="url" id="portfolio" required>
+	</div>
+	<div class="favColor">
+		<label for="favColor" required>Favorite Color</label>
+		<input type="color" id="favColor">
+	</div>
+	<div class="likeness">
+		<label for="likeness" required>Likeness</label>
+		<input type="range" id="likeness" min="1" max="100">
+	</div>
+	<button type="submit">submit</button>
+	</form>
+	
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
